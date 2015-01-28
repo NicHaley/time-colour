@@ -1,1 +1,11 @@
 /* CSS declarations go here */
+
+body {
+	margin: 0px;
+}
+
+.bg-container {
+	height: 100vh;
+	width: 100%;
+	/*background-color: rgb(255 ,255, 255);*/
+}

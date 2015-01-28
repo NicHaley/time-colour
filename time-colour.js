@@ -1,23 +1,15 @@
-if (Meteor.isClient) {
-  // counter starts at 0
-  Session.setDefault('counter', 0);
+Meteor.startup(function() {
 
-  Template.hello.helpers({
-    counter: function () {
-      return Session.get('counter');
-    }
-  });
+  setInterval(function() {
 
-  Template.hello.events({
-    'click button': function () {
-      // increment the counter when button is clicked
-      Session.set('counter', Session.get('counter') + 1);
-    }
-  });
-}
+  var today = new Date();
+  var hour = today.getHours();
+  var minute = today.getMinutes();
+  var second = today.getSeconds();
 
-if (Meteor.isServer) {
-  Meteor.startup(function () {
-    // code to run on server at startup
-  });
-}
+  $('#time').html(hour + ":" + minute + ":" + second);
+  $('.bg-container').css("background-color", "red");
+
+  }, 500);
+
+});
