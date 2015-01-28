@@ -7,4 +7,16 @@ body {
 .bg-container {
 	height: 100vh;
 	width: 100%;
+	text-align: center;
+	position: absolute;
+}
+
+#time {
+	color: white;
+	font-size: 50px;
+	padding-top: 48vh;
+}
+
+#rgb-colour {
+	color: white;
 }

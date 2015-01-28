@@ -8,14 +8,13 @@ Meteor.startup(function() {
     var second = today.getSeconds();
 
     hourColour = Math.round((hour / 23) * 255);
-
     minuteColour = Math.round((minute / 59) * 255);
     secondColour = Math.round((second / 59) * 255);
-    console.log(secondColour);
 
     $('#time').html(hour + ":" + minute + ":" + second);
-    $('.bg-container').css("background-color", "rgb(" + hourColour +", " + minuteColour + ", " + secondColour + ")");
+    $('#rgb-colour').html("(" + hourColour + ", " + minuteColour + ", " + secondColour + ")");
 
+    $('.bg-container').css("background-color", "rgb(" + hourColour +", " + minuteColour + ", " + secondColour + ")");
   }, 500);
 
 });
