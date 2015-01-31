@@ -21,6 +21,10 @@ Meteor.startup(function() {
     minuteColour = Math.round((minute / 59) * 255);
     secondColour = Math.round((second / 59) * 255);
 
+    secRotation = second / 60 * 360;
+
+    $('.second').css('-webkit-transform','rotate('+secRotation+'deg)'); 
+
     $('#time').html(hour + ":" + minute + ":" + second);
     $('#rgb-colour').html("(" + hourColour + ", " + minuteColour + ", " + secondColour + ")");
 
