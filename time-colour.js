@@ -2,10 +2,20 @@ Meteor.startup(function() {
 
   setInterval(function() {
 
+    function checkTime(i) {
+    if (i < 10) {
+        i = "0" + i;
+    }
+    return i;
+    }
+
     var today = new Date();
     var hour = today.getHours();
     var minute = today.getMinutes();
     var second = today.getSeconds();
+
+    minute = checkTime(minute);
+    second = checkTime(second);
 
     hourColour = Math.round((hour / 23) * 255);
     minuteColour = Math.round((minute / 59) * 255);
