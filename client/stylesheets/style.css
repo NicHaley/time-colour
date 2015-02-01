@@ -4,7 +4,16 @@ body {
 	margin: 0px;
 }
 
-.bg-container {
+/*.bg-container {
+	height: 100vh;
+	width: 100%;
+	text-align: center;
+	position: absolute;
+}*/
+
+.bg-image {
+	background-image: url('img/cover.jpg');
+	background-size: cover;
 	height: 100vh;
 	width: 100%;
 	text-align: center;
@@ -80,6 +89,9 @@ body {
 	margin-left: -123px;
 	margin-top: -123px;
 	border: 8px solid white;
+	background-image: url('img/cover.jpg');
+	background-size: cover;
+	background-position: center center;
 }
 
 #band {

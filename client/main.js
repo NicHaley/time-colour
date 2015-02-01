@@ -32,8 +32,8 @@ Meteor.startup(function() {
     // $('#time').html(hour + ":" + minute + ":" + second);
     // $('#rgb-colour').html("(" + hourColour + ", " + minuteColour + ", " + secondColour + ")");
 
-    $('.bg-container').css("background-color", "rgb(" + hourColour +", " + minuteColour + ", " + secondColour + ")");
-    $('.border-circle').css("background-color", "rgb(" + hourColour +", " + minuteColour + ", " + secondColour + ")");
+    // $('.bg-container').css("background-color", "rgb(" + hourColour +", " + minuteColour + ", " + secondColour + ")");
+    // $('.border-circle').css("background-color", "rgb(" + hourColour +", " + minuteColour + ", " + secondColour + ")");
   }, 500);
 
 });
