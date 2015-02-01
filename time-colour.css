@@ -57,7 +57,7 @@ body {
 	}
 
 	.circle-small {
-		z-index: 1;
+		z-index: 2;
 		position: absolute;
 		left: 50%;
 		top: 50%;
@@ -80,6 +80,16 @@ body {
 		margin-left: -123px;
 		margin-top: -123px;
 		border: 8px solid white;
+	}
+
+	#band {
+		z-index: 0;
+		position: absolute;
+		left: 50%;
+		height: 100vh;
+		width: 170px;
+		background-color: white;
+		margin-left: -85px;
 	}
 
 
