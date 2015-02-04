@@ -112,6 +112,12 @@ body {
 	float: right;
 }
 
+.todo-form {
+	z-index: 1;
+	position: absolute;;
+	/*background-color: white;*/
+}
+
 
 
 
