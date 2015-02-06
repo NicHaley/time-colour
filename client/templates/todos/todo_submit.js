@@ -1,13 +1,12 @@
-// Template.todoSubmit.events({
-// 	'submit form': function(event, template) {
-// 		event.preventDefault();
+Template.todoSubmit.events({
+	'submit form': function(event) {
+		event.preventDefault();
 
-// 		var $body = $(event.target).find('[name=body');
-// 		var todo = {
-// 			body: $body.val(),
-// 			todoId: template.data._id
-// 		};
+		var $body = $(event.target).find('[name=body]');
+		var todo = {
+			body: $body.val(),
+		};
 
-// 		Meteor.call('')
-// 	}
-// });
+		todo._id = Todos.insert(todo);
+	}
+});
