@@ -28,6 +28,7 @@ body {
 	padding-top: 48vh;
 	}*/
 
+
 #rgb-colour {
 	padding-top: 75vh;
 	color: white;
@@ -106,15 +107,17 @@ body {
 	margin-left: -85px;
 }
 
-/* Login */
+/* Nav */
 
 #login-buttons {
 	float: right;
 }
 
+/* Todo */
+
 .todo-form {
 	z-index: 2;
-	position: absolute;;
+	position: absolute;
 	/*background-color: white;*/
 }
 
@@ -126,7 +129,3 @@ body {
 	width: 100%;
 	text-align: center;
 }
-
-
-
-
