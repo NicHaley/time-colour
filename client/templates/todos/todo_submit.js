@@ -7,6 +7,6 @@ Template.todoSubmit.events({
 			body: $body.val(),
 		};
 
-		todo._id = Todos.insert(todo);
+		Meteor.call('todoInsert', todo);
 	}
 });
