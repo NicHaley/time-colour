@@ -1,3 +1,4 @@
 Meteor.publish('todos', function() {
-	return Todos.find();
+	var currentUserId = this.userId;
+	return Todos.find({userId: currentUserId});
 });
