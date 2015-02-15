@@ -4,7 +4,7 @@ Template.todoSubmit.events({
 
 		var $body = $(event.target).find('[name=body]');
 		var todo = {
-			body: $body.val(),
+			body: $body.val()
 		};
 
 		Meteor.call('todoInsert', todo);
