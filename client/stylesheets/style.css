@@ -39,12 +39,6 @@ h6 {
 	padding-top: 48vh;
 	}*/
 
-
-#rgb-colour {
-	padding-top: 75vh;
-	color: white;
-}
-
 .second, .minute {
 	z-index: 1;
 	position: absolute;
@@ -128,8 +122,7 @@ h6 {
 
 .todo-form {
 	z-index: 2;
-	position: absolute;
-	/*background-color: white;*/
+	position: relative;
 }
 
 .todo-display {
@@ -139,4 +132,48 @@ h6 {
 	color: white;
 	width: 100%;
 	text-align: left;
+	margin-left: 5%;
+	bottom: 5vh;
 }
+
+.todoItem h6 {
+	display: inline-block;
+}
+
+.delete {
+	height: 10px;
+	width: 10px;
+	border: 2px solid white;
+	display: inline-block;
+	margin-right: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

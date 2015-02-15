@@ -1,5 +1,6 @@
 <template name="todoList" >
 	<div class="todo-display">
+		{{> todoSubmit}}
 		{{#each todos}}
 			{{> todoItem}}
 		{{/each}}

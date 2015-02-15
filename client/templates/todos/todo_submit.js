@@ -1,12 +1,14 @@
 Template.todoSubmit.events({
-	'submit form': function(event) {
-		event.preventDefault();
+	'keypress #body': function(event, template) {
+		if(event.which === 13) {
+			event.preventDefault();
 
-		var $body = $(event.target).find('[name=body]');
-		var todo = {
-			body: $body.val()
-		};
+			var $body = template.find("#body").value;
+			var todo = {
+				body: $body
+			};
 
-		Meteor.call('todoInsert', todo);
+			Meteor.call('todoInsert', todo);
+		}
 	}
 });
