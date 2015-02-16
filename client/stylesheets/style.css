@@ -128,7 +128,6 @@ h5, h6 {
 .todo-form {
 	z-index: 2;
 	position: relative;
-	display: none;
 	display: inline-block;
 	vertical-align: middle;	
 }
@@ -136,25 +135,14 @@ h5, h6 {
 input#body {
 	outline: 0;
 	height: 25px;
+	width: 35vw;
 	font-size: 0.67em;
-	border-radius: 4px;
 	display: inline-block;
 	color: white;
 	background-color: transparent;
 	border: none;
 	font-weight: 300;
-}
-
-.new-todo {
-	display: inline-block;
-	vertical-align: middle;
-	margin-left: -6px;
-	margin-right: 25px;
-	font-weight: 300;
-}
-
-.new-todo:hover {
-	cursor: pointer;
+	border-bottom: 1px solid white;
 }
 
 .todo-display {
@@ -184,7 +172,21 @@ input#body {
 	margin-right: 40px;
 }
 
+::-webkit-input-placeholder {
+   color: white;
+}
 
+:-moz-placeholder { 
+   color: white;
+}
+
+::-moz-placeholder {  
+   color: white;
+}
+
+:-ms-input-placeholder {  
+   color: white;
+}
 
 
 

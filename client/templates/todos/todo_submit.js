@@ -9,8 +9,7 @@ Template.todoSubmit.events({
 			};
 
 			Meteor.call('todoInsert', todo);
-			$('.todo-form').text();
-			$('.todo-form').hide();
+			$('.todo-form').children('input').val('');
 		}
 	}
 });
