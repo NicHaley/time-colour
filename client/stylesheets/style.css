@@ -8,9 +8,14 @@
 body {
 	margin: 0px;
 	background-color: black;
+	font-size: 1em;
 }
 
-h6 {
+h5 {
+	font-size: 3rem;
+}
+
+h5, h6 {
 	margin: 0;
 	font-family: 'Lato';
 	font-weight: 100;
@@ -123,6 +128,33 @@ h6 {
 .todo-form {
 	z-index: 2;
 	position: relative;
+	display: none;
+	display: inline-block;
+	vertical-align: middle;	
+}
+
+input#body {
+	outline: 0;
+	height: 25px;
+	font-size: 0.67em;
+	border-radius: 4px;
+	display: inline-block;
+	color: white;
+	background-color: transparent;
+	border: none;
+	font-weight: 300;
+}
+
+.new-todo {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: -6px;
+	margin-right: 25px;
+	font-weight: 300;
+}
+
+.new-todo:hover {
+	cursor: pointer;
 }
 
 .todo-display {
@@ -136,6 +168,10 @@ h6 {
 	bottom: 5vh;
 }
 
+.todoItem {
+	display: inline-block;
+}
+
 .todoItem h6 {
 	display: inline-block;
 }
@@ -143,9 +179,9 @@ h6 {
 .delete {
 	height: 10px;
 	width: 10px;
-	border: 2px solid white;
+	border: 1px solid white;
 	display: inline-block;
-	margin-right: 25px;
+	margin-right: 40px;
 }
 
 

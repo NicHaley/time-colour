@@ -1,8 +1,11 @@
 <template name="todoList" >
 	<div class="todo-display">
-		{{> todoSubmit}}
 		{{#each todos}}
-			{{> todoItem}}
+			{{> todoItem}}<br>
 		{{/each}}
+		<div class="new-todo-line">
+			<h5 class="new-todo">+</h5>
+			{{> todoSubmit}}
+		</div>
 	</div>
 </template>

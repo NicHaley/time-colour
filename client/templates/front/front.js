@@ -9,10 +9,10 @@ Meteor.startup(function() {
   //   return i;
   //   }
 
-    var today = new Date();
-    var hour = today.getHours();
-    var minute = today.getMinutes();
-    var second = today.getSeconds();
+  var today = new Date();
+  var hour = today.getHours();
+  var minute = today.getMinutes();
+  var second = today.getSeconds();
 
     // minute = checkTime(minute);
     // second = checkTime(second);
@@ -30,7 +30,6 @@ Meteor.startup(function() {
     $('.hour').css('-webkit-transform','rotate('+hourRotation+'deg)');   
 
     // $('#time').html(hour + ":" + minute + ":" + second);
-    // $('#rgb-colour').html("(" + hourColour + ", " + minuteColour + ", " + secondColour + ")");
 
     // $('.bg-container').css("background-color", "rgb(" + hourColour +", " + minuteColour + ", " + secondColour + ")");
     // $('.border-circle').css("background-color", "rgb(" + hourColour +", " + minuteColour + ", " + secondColour + ")");
