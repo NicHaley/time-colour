@@ -125,7 +125,7 @@ h5, h6 {
 
 /* Todo */
 
-.todo-form {
+.todo-form, .todo-form-edit {
 	z-index: 2;
 	position: relative;
 	display: inline-block;
