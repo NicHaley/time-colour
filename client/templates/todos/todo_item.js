@@ -1,9 +1,9 @@
-Template.todoItem.events({
+// Template.todoItem.events({
 
-	'click .delete': function(e) {
-		e.preventDefault();
+// 	'click .delete': function(e) {
+// 		e.preventDefault();
 
-		var currentTodo = this._id;
-		Todos.remove(currentTodo);
-	}
-});
+// 		var currentTodo = this._id;
+// 		Todos.remove(currentTodo);
+// 	}
+// });
