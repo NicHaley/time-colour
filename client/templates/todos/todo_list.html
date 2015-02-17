@@ -1,7 +1,8 @@
 <template name="todoList" >
 	<div class="todo-display">
 			{{#each todos}}
-				{{> todoItem}}<br>
+				{{> todoEdit}}<br>
+				<!-- {{> todoItem}}<br> -->
 			{{/each}}
 		<div class="new-todo-line">
 			{{> todoSubmit}}
