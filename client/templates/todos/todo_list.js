@@ -1,5 +1,5 @@
 Template.todoList.helpers({
 	todos: function() {
-		return Todos.find();
+		return Todos.find({}, {sort: {submitted: -1}});
 	}
 });
