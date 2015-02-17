@@ -1,7 +1,5 @@
 Meteor.startup(function() {
 
-  $('#sortable').sortable();
-
   setInterval(function() {
 
   //   function checkTime(i) {

@@ -26,7 +26,7 @@ h5, h6 {
 	width: 100%;
 	text-align: center;
 	position: absolute;
-}*/
+	}*/
 
 .bg-image {
 	background-image: url('img/cover.jpg');
@@ -42,7 +42,7 @@ h5, h6 {
 	color: white;
 	font-size: 50px;
 	padding-top: 48vh;
-	}*/
+}*/
 
 .second, .minute {
 	z-index: 1;
@@ -161,7 +161,6 @@ input.body {
 	font-size: 30px;
 	z-index: 1;
 	color: white;
-	width: 100%;
 	text-align: left;
 	margin-left: 5%;
 	bottom: 5vh;
@@ -185,22 +184,28 @@ input.body {
 }
 
 ::-webkit-input-placeholder {
-   color: white;
+	color: white;
 }
 
 :-moz-placeholder { 
-   color: white;
+	color: white;
 }
 
 ::-moz-placeholder {  
-   color: white;
+	color: white;
 }
 
 :-ms-input-placeholder {  
-   color: white;
+	color: white;
 }
 
-
+.active {
+	-ms-transform: translate(100px, 0px); /* IE 9 */
+	-webkit-transform: translate(100px, 0px); /* Chrome, Safari, Opera */
+	transform: translate(100px, 0px);
+	opacity: 0;
+	transition: 1s ease-in-out;
+}
 
 
 
