@@ -181,6 +181,12 @@ input.body {
 	display: inline-block;
 	margin-right: 40px;
 	/*background-color: green;*/
+	transition: 0.2s ease-in-out;
+}
+
+.delete:hover {
+	background-color: #65d867;
+	transition: 0.2s ease-in-out;
 }
 
 ::-webkit-input-placeholder {
