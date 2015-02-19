@@ -2,20 +2,20 @@ Meteor.startup(function() {
 
   setInterval(function() {
 
-  //   function checkTime(i) {
-  //   if (i < 10) {
-  //       i = "0" + i;
-  //   }
-  //   return i;
-  //   }
+    function checkTime(i) {
+    if (i < 10) {
+        i = "0" + i;
+    }
+    return i;
+    }
 
   var today = new Date();
   var hour = today.getHours();
   var minute = today.getMinutes();
   var second = today.getSeconds();
 
-    // minute = checkTime(minute);
-    // second = checkTime(second);
+    minute = checkTime(minute);
+    second = checkTime(second);
 
     hourColour = Math.round((hour / 23) * 255);
     minuteColour = Math.round((minute / 59) * 255);
@@ -25,14 +25,15 @@ Meteor.startup(function() {
     minRotation = (minute / 60 * 360) + (secRotation / 60);
     hourRotation = (hour / 12 * 360) + (minRotation / 12);
 
-    // $('.second').css('-webkit-transform','rotate('+secRotation+'deg)');
+    $('.second').css('-webkit-transform','rotate('+secRotation+'deg)');
     $('.minute').css('-webkit-transform','rotate('+minRotation+'deg)');
     $('.hour').css('-webkit-transform','rotate('+hourRotation+'deg)');   
 
-    // $('#time').html(hour + ":" + minute + ":" + second);
+    $('#time').html(hour + ":" + minute + ":" + second);
 
-    // $('.bg-container').css("background-color", "rgb(" + hourColour +", " + minuteColour + ", " + secondColour + ")");
-    // $('.border-circle').css("background-color", "rgb(" + hourColour +", " + minuteColour + ", " + secondColour + ")");
+    $('.bg-container').css("background-color", "rgb(" + hourColour +", " + minuteColour + ", " + secondColour + ")");
+    $('.border-circle').css("background-color", "rgb(" + hourColour +", " + minuteColour + ", " + secondColour + ")");
+    $('.circle-small').css("border-color", "rgb(" + hourColour +", " + minuteColour + ", " + secondColour + ")");
   }, 500);
 
 });
