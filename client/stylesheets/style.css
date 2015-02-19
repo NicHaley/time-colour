@@ -214,9 +214,13 @@ input.body {
 	transition: 1s ease-in-out;
 }
 
+/* Weather */
 
-
-
+#weather {
+	z-index: 5;
+	position: fixed;
+	font-size: 50px;
+}
 
 
 
