@@ -3,6 +3,7 @@
 * {
 	font-family: 'Lato';
 	font-weight: 100;
+	/*text-shadow: 1px 1px 3px rgba(0,0,0,0.2);*/
 }
 
 body {
@@ -246,7 +247,7 @@ input.body {
 
 #weather h6 {
 	display: inline-block;
-	font-weight: 300;
+	font-weight: 100;
 }
 
 .icon-0:before { content: ":"; }
