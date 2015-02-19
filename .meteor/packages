@@ -6,6 +6,6 @@
 
 meteor-platform
 accounts-google
-accounts-ui
 iron:router
 mizzao:jquery-ui
+accounts-ui
