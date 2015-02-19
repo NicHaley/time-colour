@@ -15,6 +15,10 @@ h5 {
 	font-size: 3rem;
 }
 
+h6 {
+	font-size: 1.1rem;
+}
+
 h5, h6 {
 	margin: 0;
 	font-family: 'Lato';
@@ -164,7 +168,7 @@ input.body {
 	z-index: 1;
 	color: white;
 	text-align: left;
-	margin-left: 5%;
+	margin-left: 3%;
 	bottom: 5vh;
 }
 
@@ -218,8 +222,8 @@ input.body {
 
 #weather {
 	z-index: 5;
-	position: fixed;
-	font-size: 50px;
+	position: absolute;
+	left: 2.5%;
 	color: white;
 }
 
@@ -231,13 +235,18 @@ input.body {
     font-style: normal;
 }
 
-i {
-  color: #fff;
+#weather i {
   font-family: weather;
-  font-size: 150px;
+  font-size: 3rem;
   font-weight: normal;
   font-style: normal;
   line-height: 1.0;
+  display: inline-block;
+}
+
+#weather h6 {
+	display: inline-block;
+	font-weight: 300;
 }
 
 .icon-0:before { content: ":"; }
