@@ -25,7 +25,7 @@ Meteor.startup(function() {
     minRotation = (minute / 60 * 360) + (secRotation / 60);
     hourRotation = (hour / 12 * 360) + (minRotation / 12);
 
-    $('.second').css('-webkit-transform','rotate('+secRotation+'deg)');
+    // $('.second').css('-webkit-transform','rotate('+secRotation+'deg)');
     $('.minute').css('-webkit-transform','rotate('+minRotation+'deg)');
     $('.hour').css('-webkit-transform','rotate('+hourRotation+'deg)');   
 
