@@ -32,7 +32,6 @@ Meteor.startup(function() {
     $('#time').html(hour + ":" + minute + ":" + second);
 
     $('.bg-container').css("background-color", "rgb(" + hourColour +", " + minuteColour + ", " + secondColour + ")");
-    $('.border-circle').css("background-color", "rgb(" + hourColour +", " + minuteColour + ", " + secondColour + ")");
     $('.circle-small').css("border-color", "rgb(" + hourColour +", " + minuteColour + ", " + secondColour + ")");
   }, 500);
 
