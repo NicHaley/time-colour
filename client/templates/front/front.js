@@ -3,16 +3,16 @@ Meteor.startup(function() {
   setInterval(function() {
 
     function checkTime(i) {
-    if (i < 10) {
+      if (i < 10) {
         i = "0" + i;
-    }
-    return i;
+      }
+      return i;
     }
 
-  var today = new Date();
-  var hour = today.getHours();
-  var minute = today.getMinutes();
-  var second = today.getSeconds();
+    var today = new Date();
+    var hour = today.getHours();
+    var minute = today.getMinutes();
+    var second = today.getSeconds();
 
     minute = checkTime(minute);
     second = checkTime(second);

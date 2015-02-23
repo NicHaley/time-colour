@@ -10,6 +10,9 @@ Template.todoSubmit.events({
 
 			Meteor.call('todoInsert', todo);
 			$('.todo-form').children('input').val('');
+
+			var todoContainer = $('.todo-display');
+			todoContainer.animate({ scrollTop: todoContainer.prop("scrollHeight") - todoContainer.height() }, 750);
 		}
 	}
 });
