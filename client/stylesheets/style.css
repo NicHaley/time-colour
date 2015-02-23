@@ -174,7 +174,7 @@ h5, h6 {
 	input#body {
 		outline: 0;
 		height: 25px;
-		width: 35vw;
+		width: 30vw;
 		font-size: 0.67em;
 		display: inline-block;
 		color: white;
@@ -186,13 +186,14 @@ h5, h6 {
 
 	input.body {
 		outline: 0;
-		height: 25px;
-		width: 35vw;
+		/*height: 25px;*/
+		/*max-width: 23vw;*/
 		font-size: 0.67em;
 		display: inline-block;
 		color: white;
 		background-color: transparent;
 		border: none;
+		opacity: 1;
 	}
 
 	.todo-display {
@@ -223,7 +224,7 @@ h5, h6 {
 	}
 
 	.delete:hover {
-		background-color: #65d867;
+		background-color: rgba(255, 255, 255, 0.4);
 		transition: 0.2s ease-in-out;
 	}
 
@@ -244,11 +245,15 @@ h5, h6 {
 	}
 
 	.active {
-		-ms-transform: translate(100px, 0px); /* IE 9 */
-		-webkit-transform: translate(100px, 0px); /* Chrome, Safari, Opera */
+		-ms-transform: translate(100px, 0px); 
+		-webkit-transform: translate(100px, 0px); 
 		transform: translate(100px, 0px);
 		opacity: 0;
 		transition: 1s ease-in-out;
+	}
+
+	.active input.body {
+		text-decoration: line-through;
 	}
 
 	/* Weather */
