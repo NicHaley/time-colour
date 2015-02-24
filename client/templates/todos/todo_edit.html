@@ -1,6 +1,7 @@
 <template name="todoEdit">
 	<form name= "todo" class="todo-form-edit">
 		<div class="delete"></div>
-		<input type="text" name="body" class="body" value="{{body}}" placeholder="+" maxlength="40" autocomplete="off">
+		<input type="text" name="body" class="body submitEdit" value="{{body}}" placeholder="+" maxlength="40" autocomplete="off">
+		<input type="text" name="time" class="time submitEdit" value="{{time}}" placeholder="time" maxlength="20" autocomplete="off">
 	</form>	
 </template>

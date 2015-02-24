@@ -54,324 +54,335 @@ h5, h6 {
 	-webkit-filter: blur(8px);
 	}*/
 
-	#time {
-		color: white;
-		font-size: 50px;
-		padding-top: 48vh;
-	}
-
-	.second, .minute {
-		z-index: 3;
-		position: absolute;
-		left: 50%;
-		top: 50%;
-		height: 100px;
-		width: 1px;
-		background-color: white;
-		transform-origin: center bottom;
-		margin-top: -100px;
-	}
+.second, .minute {
+	z-index: 3;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	height: 100px;
+	width: 1px;
+	background-color: white;
+	transform-origin: center bottom;
+	margin-top: -100px;
+}
 
 /*	.second {
-		margin-left: -0.5px;
-	}*/
+	margin-left: -0.5px;
+}*/
 
-	.minute {
-		z-index: 3;
-		width: 4px;
-		margin-left: -2px;
-		transform-origin: center bottom;
-		-webkit-transform-origin: center bottom;
-		position: absolute;
-		left: 50%;
-		top: 50%;
-	}
+.minute {
+	z-index: 3;
+	width: 4px;
+	margin-left: -2px;
+	transform-origin: center bottom;
+	-webkit-transform-origin: center bottom;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+}
 
-	.hour {
-		z-index: 3;
-		position: absolute;
-		left: 50%;
-		top: 50%;
-		height: 70px;
-		width: 8px;
-		background-color: white;
-		transform-origin: center bottom;
-		-webkit-transform-origin: center bottom;
-		margin-left: -4px;
-		margin-top: -70px;
-	}
+.hour {
+	z-index: 3;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	height: 70px;
+	width: 8px;
+	background-color: white;
+	transform-origin: center bottom;
+	-webkit-transform-origin: center bottom;
+	margin-left: -4px;
+	margin-top: -70px;
+}
 
-	.circle-small {
-		z-index: 4;
-		position: absolute;
-		left: 50%;
-		top: 50%;
-		height: 10px;
-		width: 10px;
-		border-radius: 50%;
-		background-color: white;
-		border: 8px solid black;
-		margin-left: -13px;
-		margin-top: -13px;
-		transition: background-color 1s ease;
-	}
+.circle-small {
+	z-index: 4;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	height: 10px;
+	width: 10px;
+	border-radius: 50%;
+	background-color: white;
+	border: 8px solid black;
+	margin-left: -13px;
+	margin-top: -13px;
+}
 
-	.circle-small-mask {
-		z-index: 4;
-		position: absolute;
-		left: 50%;
-		top: 50%;
-		height: 10px;
-		width: 10px;
-		border-radius: 50%;
-		background-color: white;
-		border: 8px solid black;
-		opacity: 0.1;
-		margin-left: -13px;
-		margin-top: -13px;
-	}
+.circle-small-mask {
+	z-index: 4;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	height: 10px;
+	width: 10px;
+	border-radius: 50%;
+	background-color: white;
+	border: 8px solid black;
+	opacity: 0.1;
+	margin-left: -13px;
+	margin-top: -13px;
+}
 
-	.border-circle {
-		z-index: 2;
-		position: absolute;
-		left: 50%;
-		top: 50%;
-		height: 230px;
-		width: 230px;
-		border-radius: 50%;
-		margin-left: -123px;
-		margin-top: -123px;
-		border: 5px solid white;
-		/*background-image: url('img/cover.jpg');*/
-		background-size: cover;
-		background-position: center center;
-	}
+.border-circle {
+	z-index: 2;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	height: 230px;
+	width: 230px;
+	border-radius: 50%;
+	margin-left: -123px;
+	margin-top: -123px;
+	border: 5px solid white;
+	/*background-image: url('img/cover.jpg');*/
+	background-size: cover;
+	background-position: center center;
+}
 
 /*	#band {
-		z-index: 0;
-		position: absolute;
-		left: 50%;
-		height: 100vh;
-		width: 170px;
-		background-color: white;
-		margin-left: -85px;
-	}*/
+	z-index: 0;
+	position: absolute;
+	left: 50%;
+	height: 100vh;
+	width: 170px;
+	background-color: white;
+	margin-left: -85px;
+}*/
 
-	/* Nav */
+/* Nav */
 
-	#login-buttons {
-		float: right;
-		z-index: 4;
-	}
+#login-buttons {
+	float: right;
+	z-index: 4;
+}
 
-	/* Todo */
+/* Todo */
 
-	.todo-form, .todo-form-edit {
-		z-index: 4;
-		position: relative;
-		display: inline-block;
-		vertical-align: middle;	
-	}
+.todo-form, .todo-form-edit {
+	z-index: 4;
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;	
+}
 
-	input#body {
-		outline: 0;
-		height: 25px;
-		width: 30vw;
-		font-size: 0.67em;
-		display: inline-block;
-		color: white;
-		background-color: transparent;
-		border: none;
-		font-weight: 300;
-		border-bottom: 1px solid white;
-	}
+input#body {
+	outline: 0;
+	height: 25px;
+	width: 250px;
+	font-size: 0.67em;
+	display: inline-block;
+	color: white;
+	background-color: transparent;
+	border: none;
+	font-weight: 300;
+	border-bottom: 1px solid white;
+}
 
-	input.body {
-		outline: 0;
-		/*height: 25px;*/
-		/*max-width: 23vw;*/
-		font-size: 0.67em;
-		display: inline-block;
-		color: white;
-		background-color: transparent;
-		border: none;
-		opacity: 1;
-	}
+input#time {
+	outline: 0;
+	height: 25px;
+	width: 100px;
+	font-size: 0.67em;
+	display: inline-block;
+	color: white;
+	background-color: transparent;
+	border: none;
+	font-weight: 300;
+	border-bottom: 1px solid white;
+	padding: 1px;
+}
 
-	.todo-display {
-		position: absolute;
-		font-size: 30px;
-		max-height: 40vh;
-		z-index: 4;
-		color: white;
-		text-align: left;
-		margin-left: 3%;
-		bottom: 5vh;
-		overflow-y: auto;
-	}
+input.body {
+	outline: 0;
+	height: 25px;
+	max-width: 23vw;
+	font-size: 0.67em;
+	display: inline-block;
+	color: white;
+	background-color: transparent;
+	border: none;
+	opacity: 1;
+}
 
-	.todoItem {
-		display: inline-block;
-	}
+input.time {
+	outline: 0;
+	height: 25px;
+	width: 100px;
+	font-size: 0.67em;
+	display: inline-block;
+	color: white;
+	background-color: transparent;
+	border: none;
+	opacity: 1;
+}
 
-	.todoItem h6 {
-		display: inline-block;
-	}
+.todo-display {
+	position: absolute;
+	font-size: 30px;
+	max-height: 200px;
+	z-index: 4;
+	color: white;
+	text-align: left;
+	margin-left: 3%;
+	bottom: 5vh;
+	overflow-y: auto;
+}
 
-	.delete {
-		height: 10px;
-		width: 10px;
-		border: 1px solid white;
-		display: inline-block;
-		margin-right: 40px;
-		transition: 0.2s ease-in-out;
-	}
+.delete {
+	height: 10px;
+	width: 10px;
+	border: 1px solid white;
+	display: inline-block;
+	margin-right: 40px;
+	transition: 0.2s ease-in-out;
+}
 
-	.delete:hover {
-		background-color: rgba(255, 255, 255, 0.4);
-		transition: 0.2s ease-in-out;
-	}
+.delete:hover {
+	background-color: rgba(255, 255, 255, 0.4);
+	transition: 0.2s ease-in-out;
+}
 
-	::-webkit-input-placeholder {
-		color: white;
-	}
+::-webkit-input-placeholder {
+	color: white;
+}
 
-	:-moz-placeholder { 
-		color: white;
-	}
+:-moz-placeholder { 
+	color: white;
+}
 
-	::-moz-placeholder {  
-		color: white;
-	}
+::-moz-placeholder {  
+	color: white;
+}
 
-	:-ms-input-placeholder {  
-		color: white;
-	}
+:-ms-input-placeholder {  
+	color: white;
+}
 
-	.active {
-		-ms-transform: translate(100px, 0px); 
-		-webkit-transform: translate(100px, 0px); 
-		transform: translate(100px, 0px);
-		opacity: 0;
-		transition: 1s ease-in-out;
-	}
+.active {
+	-ms-transform: translate(100px, 0px); 
+	-webkit-transform: translate(100px, 0px); 
+	transform: translate(100px, 0px);
+	opacity: 0;
+	transition: 1s ease-in-out;
+}
 
-	.active input.body {
-		text-decoration: line-through;
-	}
+.active input.body {
+	text-decoration: line-through;
+}
 
-	/* Weather */
+/* Weather */
 
-	#weather {
-		z-index: 5;
-		position: absolute;
-		left: 2.5%;
-		color: white;
-	}
+#weather {
+	z-index: 5;
+	position: absolute;
+	left: 2.5%;
+	color: white;
+}
 
-	/* Weather Icons */
-	@font-face {
-		font-family: 'weather';
-		src: url('/fonts/artill_clean_icons.otf');
-		font-weight: normal;
-		font-style: normal;
-	}
+/* Weather Icons */
+@font-face {
+	font-family: 'weather';
+	src: url('/fonts/artill_clean_icons.otf');
+	font-weight: normal;
+	font-style: normal;
+}
 
-	#weather i {
-		font-family: weather;
-		font-size: 3rem;
-		font-weight: normal;
-		font-style: normal;
-		line-height: 1.0;
-		display: inline-block;
-	}
+#weather i {
+	font-family: weather;
+	font-size: 3rem;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 1.0;
+	display: inline-block;
+}
 
-	#weather h6 {
-		display: inline-block;
-		font-weight: 100;
-	}
+#weather h6 {
+	display: inline-block;
+	font-weight: 100;
+}
 
-	.icon-0:before { content: ":"; }
-	.icon-1:before { content: "p"; }
-	.icon-2:before { content: "S"; }
-	.icon-3:before { content: "Q"; }
-	.icon-4:before { content: "S"; }
-	.icon-5:before { content: "W"; }
-	.icon-6:before { content: "W"; }
-	.icon-7:before { content: "W"; }
-	.icon-8:before { content: "W"; }
-	.icon-9:before { content: "I"; }
-	.icon-10:before { content: "W"; }
-	.icon-11:before { content: "I"; }
-	.icon-12:before { content: "I"; }
-	.icon-13:before { content: "I"; }
-	.icon-14:before { content: "I"; }
-	.icon-15:before { content: "W"; }
-	.icon-16:before { content: "I"; }
-	.icon-17:before { content: "W"; }
-	.icon-18:before { content: "U"; }
-	.icon-19:before { content: "Z"; }
-	.icon-20:before { content: "Z"; }
-	.icon-21:before { content: "Z"; }
-	.icon-22:before { content: "Z"; }
-	.icon-23:before { content: "Z"; }
-	.icon-24:before { content: "E"; }
-	.icon-25:before { content: "E"; }
-	.icon-26:before { content: "3"; }
-	.icon-27:before { content: "a"; }
-	.icon-28:before { content: "A"; }
-	.icon-29:before { content: "a"; }
-	.icon-30:before { content: "A"; }
-	.icon-31:before { content: "6"; }
-	.icon-32:before { content: "1"; }
-	.icon-33:before { content: "6"; }
-	.icon-34:before { content: "1"; }
-	.icon-35:before { content: "W"; }
-	.icon-36:before { content: "1"; }
-	.icon-37:before { content: "S"; }
-	.icon-38:before { content: "S"; }
-	.icon-39:before { content: "S"; }
-	.icon-40:before { content: "M"; }
-	.icon-41:before { content: "W"; }
-	.icon-42:before { content: "I"; }
-	.icon-43:before { content: "W"; }
-	.icon-44:before { content: "a"; }
-	.icon-45:before { content: "S"; }
-	.icon-46:before { content: "U"; }
-	.icon-47:before { content: "S"; }
+.icon-0:before { content: ":"; }
+.icon-1:before { content: "p"; }
+.icon-2:before { content: "S"; }
+.icon-3:before { content: "Q"; }
+.icon-4:before { content: "S"; }
+.icon-5:before { content: "W"; }
+.icon-6:before { content: "W"; }
+.icon-7:before { content: "W"; }
+.icon-8:before { content: "W"; }
+.icon-9:before { content: "I"; }
+.icon-10:before { content: "W"; }
+.icon-11:before { content: "I"; }
+.icon-12:before { content: "I"; }
+.icon-13:before { content: "I"; }
+.icon-14:before { content: "I"; }
+.icon-15:before { content: "W"; }
+.icon-16:before { content: "I"; }
+.icon-17:before { content: "W"; }
+.icon-18:before { content: "U"; }
+.icon-19:before { content: "Z"; }
+.icon-20:before { content: "Z"; }
+.icon-21:before { content: "Z"; }
+.icon-22:before { content: "Z"; }
+.icon-23:before { content: "Z"; }
+.icon-24:before { content: "E"; }
+.icon-25:before { content: "E"; }
+.icon-26:before { content: "3"; }
+.icon-27:before { content: "a"; }
+.icon-28:before { content: "A"; }
+.icon-29:before { content: "a"; }
+.icon-30:before { content: "A"; }
+.icon-31:before { content: "6"; }
+.icon-32:before { content: "1"; }
+.icon-33:before { content: "6"; }
+.icon-34:before { content: "1"; }
+.icon-35:before { content: "W"; }
+.icon-36:before { content: "1"; }
+.icon-37:before { content: "S"; }
+.icon-38:before { content: "S"; }
+.icon-39:before { content: "S"; }
+.icon-40:before { content: "M"; }
+.icon-41:before { content: "W"; }
+.icon-42:before { content: "I"; }
+.icon-43:before { content: "W"; }
+.icon-44:before { content: "a"; }
+.icon-45:before { content: "S"; }
+.icon-46:before { content: "U"; }
+.icon-47:before { content: "S"; }
 
-	/* Login Buttons */
+/* Login Buttons */
 
-	#login-buttons {
-		position: absolute;
-		right: 1.5%;
-		top: 1.5%;
+#login-buttons {
+	position: absolute;
+	right: 1.5%;
+	top: 1.5%;
 
-	}
+}
 
-	#login-buttons .login-button, .accounts-dialog .login-button {
-		background-color: transparent;
-		border-color: white;
-		transition: 0.2s;
-	}
+#login-buttons .login-button, .accounts-dialog .login-button {
+	background-color: transparent;
+	border-color: white;
+	transition: 0.2s;
+}
 
-	#login-buttons .login-button:hover, .accounts-dialog .login-button {
-		background:rgba(255,255,255,0.15);
-		transition: 0.2s;
-	}
+#login-buttons .login-button:hover, .accounts-dialog .login-button {
+	background:rgba(255,255,255,0.15);
+	transition: 0.2s;
+}
 
-	#login-buttons-image-google {
-		display: none;
-		background-image: none;
-	}
+#login-buttons-image-google {
+	display: none;
+	background-image: none;
+}
 
-	#login-buttons .text-besides-image {
-		margin-left: 0px;
-	}
+#login-buttons .text-besides-image {
+	margin-left: 0px;
+}
 
-	.login-display-name {
-		color: white;
-	}
+.login-display-name {
+	color: white;
+}
 
 
 
