@@ -32,6 +32,7 @@ h5, h6 {
 	text-align: center;
 	position: absolute;
 	z-index: 1;
+	transition: background-color 1s ease;
 }
 
 .bg-mask {
@@ -112,6 +113,7 @@ h5, h6 {
 		border: 8px solid black;
 		margin-left: -13px;
 		margin-top: -13px;
+		transition: background-color 1s ease;
 	}
 
 	.circle-small-mask {
